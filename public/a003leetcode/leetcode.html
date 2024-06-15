@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leetcode</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body{
+            background-color: rgb(18, 17, 17);
+        }
+        header{
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header div span{
+            padding-right: 10px;
+        }
+        .problem-title{
+            font-size: 18px;
+        }
+        .run{
+            border: 1px solid white;
+            padding: 4px;
+            border-radius: 5px;
+        }
+        .submit{
+            margin-left: 3px;
+            border: 1px solid white;
+            padding: 4px;
+            border-radius: 5px;
+            margin-right: 5px;
+            color: rgb(31, 204, 31);
+        }
+        .premium{
+            color: rgb(203, 138, 18);
+            background-color:rgba(203, 138, 18,0.2);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            grid-gap: 10px;
+            color: white;
+        }
+        .left-panel{
+            background-color: rgb(46, 42, 42);
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .right-panel{
+            background-color: rgb(46, 42, 42);
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .sub-menu{
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            background-color: rgb(33, 32, 32);
+        }
+        .easy-level span{
+            padding: 7px;
+        }
+        .easy{
+            color: aquamarine;
+            border: 0.5px solid white;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        .bi-lock-fill{
+            border: 0.5px solid white;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        pre{
+            margin-left: -140px;
+        }
+        dt{
+           font-size: 22px; 
+        }
+        dd{
+            font-size: 20px;
+        }
+        var{
+            color: rgb(12, 74, 231);
+
+        }
+        .comment{
+            color: rgb(11, 246, 11);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="bi bi-amazon"></span>
+            <span class="problem-title">
+                <span class="bi bi-filetype-js"></span>
+                <span>30 Days Of JavaScript</span>
+            </span>
+            <span class="bi bi-chevron-left"></span>
+            <span class="bi bi-chevron-right"></span>
+            <span class="bi bi-shuffle"></span>
+        </div>
+        <div>
+            <span class="bi bi-bug"></span>
+            <span class="run">
+                <span class="bi bi-play-fill"></span>
+                <span>Run</span>
+            </span>
+            <span class="submit">
+                <span class="bi bi-cloud-upload"></span>
+                <span>Submit</span>
+            </span>
+            <span class="bi bi-file-earmark"></span>
+        </div>
+        <div>
+            <span class="bi bi-columns-gap"></span>
+            <span class="bi bi-gear"></span>
+            <span>Register</span>
+            <span>or</span>
+            <span>Sigin</span>
+            <span class="premium">Premium</span>
+        </div>
+    </header>
+    <section>
+        <div class="left-panel">
+            <div class="sub-menu">
+                <div>
+                    <span class="bi bi-file">&nbsp; Description</span>
+                    <span class="bi bi-book">&nbsp; Editorial</span>
+                    <span class=" bi bi-hourglass">&nbsp; Solutions</span>
+                    <span class="bi bi-stopwatch">&nbsp; submissions</span>
+                </div>
+                <div>
+                    <span class="bi bi-fullscreen"></span>
+                    <span class="bi bi-chevron-left"></span>
+                </div>
+            </div>
+            <h2>2667. Create Hello World Function</h2>
+            <div class="easy-level">
+                <span class="easy">Easy</span>
+                <span class="bi bi-lock-fill">Companies</span>
+            </div>
+            <p>Write a function <samp>createHelloWorld</samp>. It should return a new function that always returns <samp>"Hello World"</samp>. </p>
+            <dl>
+                <dt>Example-1</dt>
+                <dd>
+                    <pre>
+                        <b>Input</b>: args = []
+                        <b>Output</b>: "Hello World"
+                        <b>Explanation</b>:
+                        const f = createHelloWorld();
+                        f(); // "Hello World"
+
+                        The function returned by createHelloWorld should always return "Hello World".
+                    </pre>
+                </dd>
+                <dt>Example-2</dt>
+                <dd>
+                    <pre>
+                        <b>Input</b>: args = []
+                        <b>Output</b>: "Hello World"
+                        <b>Explanation</b>:
+                        const f = createHelloWorld();
+                        f(); // "Hello World"
+
+                        The function returned by createHelloWorld should always return "Hello World".
+                    </pre>
+                </dd>
+            </dl>
+        </div>
+        <div class="right-panel">
+            <div class="sub-menu">
+                <div>
+                    <span class="bi bi-code-slash">&nbsp; Code</span>
+                </div>
+                <div>
+                    <span class="bi bi-fullscreen"></span>
+                    <span class="bi bi-chevron-up"></span>
+                </div>
+            </div>
+            <div class="sun-menu-1"></div>
+            <code>
+                <pre>
+                    <span class="comment">/**</span>
+                    <span class="comment">* </span><var>@return</var> {Function}
+                    <span class="comment">*/</span>
+                    <var>var</var> createHelloWorld = <var>function</var>() {
+    
+                    return <var>function</var>(...args) {
+        
+                    }
+                    };
+                    <span class="comment">/**
+                    * const f = createHelloWorld();
+                    * f(); // "Hello World"
+                    </span>
+                </pre>
+            </code>
+        </div>
+    </section>
+</body>
+</html>
