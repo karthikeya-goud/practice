@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="mb-2 fixed-top">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand"> Course Magic </span>
+                <button data-bs-target="#menu" data-bs-toggle="collapse" class="navbar-toggler"> 
+                  <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="navbar-collapse collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"> <a class="nav-link"> Home </a> </li>
+                        <li class="nav-item"> <a class="nav-link"> Account </a> </li>
+                        <li class="nav-item"> <a class="nav-link"> About </a> </li>
+                        <li class="nav-item"> <a class="nav-link"> Courses </a> </li>
+                        <li class="nav-item"> <a class="nav-link"> login </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <article class="my-2">
+        <div class="carousel carousel-fade" data-bs-theme="dark" id="banners" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="w-100 h-50 fs-5 fw-bold text-center"> <span class="text-danger"> Is Programming Seems To Be Hard :&#40; </span> </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 h-50 fs-5 fw-bold text-center"> <span class="text-warning"> Want To Learn Programming ? </span> </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 h-50 fs-5 fw-bold text-center"> <span> Your'e At Right Place For Learning </span> </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 h-50 fs-5 fw-bold text-center"> <span> More Knowledge At <span class="text-success"> Less Price </span> </span> </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 h-50 fs-5 fw-bold text-center"> <span class="text-primary"> Choose The Course Now !! </span> </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <section>
+        <div class="carousel slide" id="banner" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/banner1.jpg" alt="" class="w-100 d-block" style="height: 400px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner2.jpg" alt="" class="w-100 d-block" style="height: 400px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/banner3.jpg" alt="" class="w-100 d-block" style="height: 400px;">
+                </div>
+
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banner">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                
+            </div>
+        </div>
+
+        <main>
+            <div class="ms-3 mt-4 d-flex justify-content-around">
+                <div class="card" style="width: 250px;">
+                    <img src="./images/n1.jpg" alt="" class="card-img-top">
+                    <div class="card-header">
+                        <div class="h4 card-title fw-bold"> Python </div>
+                        <div>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><span class="bi bi-person-fill fs-5"> By: Mr.Charan </span></li>
+                            <li><span class="bi bi-clock fs-5"> Dur : 60 Days </span></li>
+                            <li><span>
+                                    <span class="bi bi-cash-stack text-success fs-4 fw-bold"></span> 
+                                    <span class="fs-4 fw-bold"> &#8377;699 </span> <del class="fs-6">&#8377; 1999</del> 
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer p-0">
+                        <button class="btn bg-warning w-100" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"> Enroll </button>
+                    </div>
+                </div>
+    
+                <div class="card" style="width: 250px;">
+                    <img src="./images/n2.jpg" alt="" class="card-img-top">
+                    <div class="card-header">
+                        <div class="h4 card-title fw-bold"> Java </div>
+                        <div>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><span class="bi bi-person-fill fs-5"> By: Mr.Charan </span></li>
+                            <li><span class="bi bi-clock fs-5"> Dur : 60 Days </span></li>
+                            <li><span>
+                                    <span class="bi bi-cash-stack text-success fs-4 fw-bold"></span> 
+                                    <span class="fs-4 fw-bold"> &#8377;699 </span> <del class="fs-6">&#8377; 1999</del> 
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer p-0">
+                        <button class="btn bg-warning w-100" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"> Enroll </button>
+                    </div>
+                </div>
+    
+                <div class="card" style="width: 250px;">
+                    <img src="./images/n3.jpg" alt="" class="card-img-top">
+                    <div class="card-header">
+                        <div class="h4 card-title fw-bold"> .Net </div>
+                        <div>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><span class="bi bi-person-fill fs-5"> By: Mr.Charan </span></li>
+                            <li><span class="bi bi-clock fs-5"> Dur : 60 Days </span></li>
+                            <li><span>
+                                    <span class="bi bi-cash-stack text-success fs-4 fw-bold"></span> 
+                                    <span class="fs-4 fw-bold"> &#8377;699 </span> <del class="fs-6">&#8377; 1999</del> 
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer p-0">
+                        <button class="btn bg-warning w-100" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"> Enroll </button>
+                    </div>
+                </div>
+    
+                <div class="card" style="width: 250px;">
+                    <img src="./images/n4.jpg" alt="" class="card-img-top">
+                    <div class="card-header">
+                        <div class="h4 card-title fw-bold"> SalesForce </div>
+                        <div>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><span class="bi bi-person-fill fs-5"> By: Mr.Charan </span></li>
+                            <li><span class="bi bi-clock fs-5"> Dur : 60 Days </span></li>
+                            <li><span>
+                                    <span class="bi bi-cash-stack text-success fs-4 fw-bold"></span> 
+                                    <span class="fs-4 fw-bold"> &#8377;699 </span> <del class="fs-6">&#8377; 1999</del> 
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer p-0">
+                        <button class="btn bg-warning w-100" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"> Enroll </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="ms-3 mt-4 d-flex justify-content-around">
+                
+                <div class="card" style="width: 250px;">
+                    <img src="./images/n4.jpg" alt="" class="card-img-top">
+                    <div class="card-header">
+                        <div class="h4 card-title fw-bold"> SalesForce </div>
+                        <div>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><span class="bi bi-person-fill fs-5"> By: Mr.Charan </span></li>
+                            <li><span class="bi bi-clock fs-5"> Dur : 60 Days </span></li>
+                            <li><span>
+                                    <span class="bi bi-cash-stack text-success fs-4 fw-bold"></span> 
+                                    <span class="fs-4 fw-bold"> &#8377;699 </span> <del class="fs-6">&#8377; 1999</del> 
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer p-0">
+                        <button class="btn bg-warning w-100" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"> Enroll </button>
+                    </div>
+                </div>
+    
+                <div class="card" style="width: 250px;">
+                    <img src="./images/n2.jpg" alt="" class="card-img-top">
+                    <div class="card-header">
+                        <div class="h4 card-title fw-bold"> Java </div>
+                        <div>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><span class="bi bi-person-fill fs-5"> By: Mr.Charan </span></li>
+                            <li><span class="bi bi-clock fs-5"> Dur : 60 Days </span></li>
+                            <li><span>
+                                    <span class="bi bi-cash-stack text-success fs-4 fw-bold"></span> 
+                                    <span class="fs-4 fw-bold"> &#8377;699 </span> <del class="fs-6">&#8377; 1999</del> 
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer p-0">
+                        <button class="btn bg-warning w-100" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"> Enroll </button>
+                    </div>
+                </div>
+    
+                <div class="card" style="width: 250px;">
+                    <img src="./images/n3.jpg" alt="" class="card-img-top">
+                    <div class="card-header">
+                        <div class="h4 card-title fw-bold"> .Net </div>
+                        <div>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><span class="bi bi-person-fill fs-5"> By: Mr.Charan </span></li>
+                            <li><span class="bi bi-clock fs-5"> Dur : 60 Days </span></li>
+                            <li><span>
+                                    <span class="bi bi-cash-stack text-success fs-4 fw-bold"></span> 
+                                    <span class="fs-4 fw-bold"> &#8377;699 </span> <del class="fs-6">&#8377; 1999</del> 
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer p-0">
+                        <button class="btn bg-warning w-100" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"> Enroll </button>
+                    </div>
+                </div>
+    
+    
+                <div class="card" style="width: 250px;">
+                    <img src="./images/n1.jpg" alt="" class="card-img-top">
+                    <div class="card-header">
+                        <div class="h4 card-title fw-bold"> Python </div>
+                        <div>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><span class="bi bi-person-fill fs-5"> By: Mr.Charan </span></li>
+                            <li><span class="bi bi-clock fs-5"> Dur : 60 Days </span></li>
+                            <li><span>
+                                    <span class="bi bi-cash-stack text-success fs-4 fw-bold"></span> 
+                                    <span class="fs-4 fw-bold"> &#8377;699 </span> <del class="fs-6">&#8377; 1999</del> 
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer p-0">
+                        <button class="btn bg-warning w-100" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"> Enroll </button>
+                    </div>
+                </div>
+    
+    
+            </div>
+       </main>
+    </section>
+
+    <footer class="bg-dark container-fluid text-light mt-3 pb-4">
+        <div class="text-center my-3">
+            <span class="fs-4 fw-bold"> EASY LEARN WITH US !</span>
+        </div>
+        <div class="my-3 d-flex justify-content-center align-items-center">
+            <form style="width:600px;">
+                <div class="input-group">
+                    <input type="email" name="email" id="" class="form-control w-50" required placeholder="Enter your email">
+                    <button class="btn btn-secondary input-group-text w-25"> Subcribe </button>
+                </div>
+            </form>
+        </div>
+        <div class="my-4 d-flex justify-content-around">
+            <div>
+                <div class="fs-3 ms-2"><span> Reach Us </span></div>
+                <aside class="fs-4">
+                    <span class="bi bi-facebook ms-2"></span>
+                    <span class="bi bi-instagram ms-2"></span>
+                    <span class="bi bi-youtube ms-2"></span>
+                    <span class="bi bi-twitter-x ms-2"></span>
+                </aside>
+            </div>
+            <div class="p-3 my-4">
+                <span class="p-1 ms-1"> Get to know us </span>
+                <span class="p-1 ms-1"> About </span>
+                <span class="p-1 ms-1"> Our Courses </span>
+                <span class="p-1 ms-1"> Contact us </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
