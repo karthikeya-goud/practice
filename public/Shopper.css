@@ -1,0 +1,94 @@
+.bi-cart{
+  position: relative;
+}
+.set-count{
+  position: absolute;
+  font-size: 8px;
+  top:-6px;
+  right: -4px;
+}
+main{
+  height: 550px;
+}
+.women-fashion{
+    background-image: url('./images/women-fashion.jpg');
+    background-size: cover;
+}
+  .men-fashion{
+    background-image: url('./images/men-fashion.jpg');
+    background-size: cover;
+  }
+  .kids-fashion{
+    background-image: url('./images/kids-fashion.jpg');
+    background-size: cover;
+  }
+.services{
+  margin-top: 10px;
+}
+.services-card{
+  clear: left;
+  margin: 0px 5px 0px 5px;
+}
+.new-collection-info{
+  text-align: center;
+  margin-top: 10px;
+    
+}
+.collection-text{
+  
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.collection-big-text{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.new-collection-img div{
+  margin: 2px 0px 2px 0px;
+  height: 550px;
+}
+@media screen and (orientation:landscape){
+  .set-menu{
+    margin-left: 350px;
+  }
+  .set-nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+  .services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .new-collection-img{
+    margin: 10px 30px 10px 30px;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+  }
+}
+
+@media screen and (orientation:portrait){
+  .article-text-size{
+    font-size: 11px;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 12fr;
+  }
+  .kids-fashion{
+    display: none;
+  }
+  .men-fashion{
+    display:none;
+  }
+  .new-collection-img{
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 12fr;
+  }
+}
