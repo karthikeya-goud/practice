@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
+    .middle div{
+      float: left;
+    }
+    .top{
+     background-color: #99f;
+      opacity: 1;
+      transform: translate(128px,26px) skew(-45deg) scaleY(0.5);
+    }
+    .left{
+      background-color: #9df;
+      opacity:0.3;
+      transform: skewY(135deg) scaleX(0.5) translate(154px,52px) ;
+      
+    }
+    .face{
+      background-color: #39d;
+      opacity: 0.3;
+    }
+    .right{
+      background-color: #faf;
+      opacity: 0.2;
+      transform: skewY(135deg) translate(-26px,-51px) scaleX(0.5);
+    }
+    .bottom{
+      height: 50px;
+      clear: left;
+      background-color: #9fe;
+      opacity: 0.3;
+      transform:  skew(-45deg) translate(77px,-51px);
+    }
+    .back{
+      background-color: #825;
+      opacity: 0.3;
+      transform: translate(153px,-204px);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="top box"></div>
+    <div class="middle">
+      <div class="left box"></div>
+      <div class="face box "></div>
+      <div class="right box"></div>
+    </div>
+    <div class="bottom box"></div>
+    <div class="back box"></div>
+  </div>
+</body>
+</html>
