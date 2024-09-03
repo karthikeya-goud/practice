@@ -121,7 +121,7 @@
         let d=new Date();
         //d.setSeconds(55);
         document.getElementById("sec-box").style.transform=`rotate(${d.getSeconds()*6}deg)`;
-        document.getElementById("min-box").style.transform=`rotate(${d.getMinutes()*6}deg)`;
+        document.getElementById("min-box").style.transform=`rotate(${d.getMinutes()*6+ d.getSeconds()*0.1}deg)`;
         document.getElementById("hour-box").style.transform=`rotate(${d.getHours()*30+d.getMinutes()*0.5}deg)`;
       },1000);
     }
