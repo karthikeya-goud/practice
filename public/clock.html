@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clock</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 150px;
+    }
+    .clock{
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      position: relative;
+      border-radius: 300px;
+    }
+    .sec-box{
+      width: 240px;
+      height: 240px;
+      position: absolute;
+      top: 30px;
+      left:30px;
+      
+    }
+    .min-box{
+      width: 240px;
+      height: 240px;
+      position: absolute;
+      top: 30px;
+      left:30px;
+    }
+    .hour-box{
+      width: 240px;
+      height: 240px;
+      position: absolute;
+      top: 30px;
+      left:30px;
+    }
+    .sec-hand{
+      width: 3px;
+      height: 120px;
+      background-color: black;
+      position: absolute;
+      left: 120px;
+    }
+    .min-hand{
+      width: 5px;
+      height: 100px;
+      background-color: black;
+      position: absolute;
+      left: 120px;
+      top: 20px;
+    }
+    .hour-hand{
+      width: 7px;
+      height: 90px;
+      background-color: black;
+      position: absolute;
+      left: 120px;
+      top: 30px;
+    }
+    .face{
+      position: absolute;
+    }
+    .face-12{
+      left:145px;
+    }
+    .face-1{
+      left:210px;
+      top:20px;
+    }
+    .face-2{
+      left: 260px;
+      top: 70px;
+    }
+    .face-3{
+      left: 280px;
+      top: 135px;
+    }
+    .face-4{
+      left:260px;
+      top:210px;
+    }
+    .face-5{
+      left: 210px;
+      top: 255px;
+    }
+    .face-6{
+      left: 145px;
+      top:275px;
+    }
+    .face-7{
+      left:75px;
+      top:250px;
+    }
+    .face-8{
+      left: 25px;
+      top: 200px;
+    }
+    .face-9{
+      left: 10px;
+      top: 135px;
+    }
+    .face-10{
+      left: 20px;
+      top: 75px;
+    }
+    .face-11{
+      left: 75px;
+      top: 20px;
+    }
+  </style>
+  <script>
+    function bodyload(){
+      setInterval(function(){
+        let d=new Date();
+        //d.setSeconds(55);
+        document.getElementById("sec-box").style.transform=`rotate(${d.getSeconds()*6}deg)`;
+        document.getElementById("min-box").style.transform=`rotate(${d.getMinutes()*6}deg)`;
+        document.getElementById("hour-box").style.transform=`rotate(${d.getHours()*30+d.getMinutes()*0.5}deg)`;
+      },1000);
+    }
+  </script>
+</head>
+<body onload="bodyload()">
+    <div class="clock">
+      <div class="face face-1">1</div>
+      <div class="face face-2">2</div>
+      <div class="face face-3">3</div>
+      <div class="face face-4">4</div>
+      <div class="face face-5">5</div>
+      <div class="face face-6">6</div>
+      <div class="face face-7">7</div>
+      <div class="face face-8">8</div>
+      <div class="face face-9">9</div>
+      <div class="face face-10">10</div>
+      <div class="face face-11">11</div>
+      <div class="face face-12">12</div>
+      <div class="sec-box" id="sec-box">
+        <div class="sec-hand"></div>
+      </div>
+      <div class="min-box" id="min-box">
+        <div class="min-hand"></div>
+      </div>
+      <div class="hour-box" id="hour-box">
+        <div class="hour-hand"></div>
+      </div>
+    </div>
+</body>
+</html>
